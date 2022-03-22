@@ -16,6 +16,9 @@ export default {
       ime: "Yo",
     };
   },
+  mounted() {
+
+  },
   name: "AboutPage",
 }
 </script>
