@@ -3,7 +3,7 @@
   
   <ul>
     <li v-for="item in commits" v-bind:key="item.sha">
-    Commit {{ item.sha }}
+    Commit <router-link to="/about"> {{ item.sha }}</router-link>
     </li>
   </ul>
   </div>
@@ -26,9 +26,9 @@ export default {
     );
     let podaci = await rezultat.json();
 
-    for (let item of podaci) {
-      console.log(item.sha);
-    }
+    //for (let item of podaci) {
+    //  console.log(item.sha);
+    //}
     this.commits = podaci;
   },
 
