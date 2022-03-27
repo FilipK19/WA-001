@@ -4,7 +4,7 @@
   <ul>
     <li v-for="item in commits" v-bind:key="item.sha">
     Commit 
-    <router-link :to=" '/commit/' + item.sha"> {{ item.sha }}</router-link>
+    <router-link :to=" '/commitDetails/' + item.sha"> {{ item.sha }}</router-link>
     </li>
   </ul>
   </div>
