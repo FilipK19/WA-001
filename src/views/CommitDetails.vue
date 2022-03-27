@@ -1,5 +1,6 @@
 <template>
   <div class="commit">
+    <GoBack />
     <h1>Detalji Commita</h1>
     <ul>
       <li>Ime autora: {{commit.commit.author.name}}</li>
@@ -11,7 +12,11 @@
 </template>
 
 <script>
+import GoBack from "../components/BackButton.vue"
 export default {
+  components: {
+    GoBack
+  },
   name: "CommitDetails",
   props: ["sha"],
 
